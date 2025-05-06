@@ -13,7 +13,7 @@ pygame.display.set_caption("Pac-Man")
 
 # Colors
 BLACK = (0, 0, 0)
-YELLOW = (255, 255, 0)
+GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 WHITE = (255, 255, 255)
 
@@ -93,7 +93,7 @@ while running:
                 pygame.draw.circle(screen, WHITE, (x * CELL_SIZE + CELL_SIZE // 2, y * CELL_SIZE + CELL_SIZE // 2), 3)
 
     # Draw Pac-Man
-    pygame.draw.circle(screen, YELLOW, (int(pacman_x), int(pacman_y)), pacman_radius)
+    pygame.draw.circle(screen, GREEN, (int(pacman_x), int(pacman_y)), pacman_radius)
 
     pygame.display.flip()
     clock.tick(60)
